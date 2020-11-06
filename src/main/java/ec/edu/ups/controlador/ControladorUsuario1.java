@@ -18,7 +18,6 @@ public class ControladorUsuario1 extends ControladorGenerico<Usuario>{
     private Telefono telefono;
     private Usuario usuario;
     private ControladorGeneral controladorT;
-    
     private List<Usuario> listaDeUsuarios;
 
 
@@ -39,8 +38,7 @@ public class ControladorUsuario1 extends ControladorGenerico<Usuario>{
                 break;
                 
             }
-        }
-        //super.update(objeto); 
+        } 
     }
  
     public Usuario verUsuario(){
@@ -62,7 +60,6 @@ public class ControladorUsuario1 extends ControladorGenerico<Usuario>{
         
     }
     public void modificarTelefono(Telefono telefono){
-        //this.telefono=usuario.buscarTelefono(telefono.getCodigo());
         usuario.modificarTelefono(telefono);
         update(usuario);
         
